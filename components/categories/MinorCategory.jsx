@@ -35,20 +35,20 @@ const MinorCategory = ({ title = "", type = "", products }) => {
                             spaceBetween: 10,
                         },
                         480: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                             spaceBetween: 10,
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                             spaceBetween: 15,
                         },
                         1024: {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                             spaceBetween: 15,
                         },
                         1280: {
-                            slidesPerView: 5,
-                            spaceBetween: 30,
+                            slidesPerView: 4,
+                            spaceBetween: 20,
                         },
                     }}
                 >
@@ -59,7 +59,7 @@ const MinorCategory = ({ title = "", type = "", products }) => {
                         return (
                             <div key={index}>
                                 <SwiperSlide>
-                                    <GroceryItem img={product.img} price={product.price} title={product.title} weight={product.weight} />
+                                    <GroceryItem img={product.img} stars={product.stars} price={product.price} title={product.title} weight={product.weight} />
                                 </SwiperSlide>
                             </div>
                         )
